@@ -1,0 +1,212 @@
+main {
+  width: 100%;
+  max-width: 1680px;
+  margin: auto;
+  margin-top: 120px;
+}
+
+#towel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+
+#towel h2 {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+#towel .t_menu_btn {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+#towel .t_menu_btn button{
+  display: block;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #999;
+  font-weight: 400;
+}
+
+#towel .t_list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 6rem 3rem;
+  text-align: center;
+}
+
+#towel .t_list .item {
+  position: relative;
+}
+
+
+#towel .t_list .item .imgbox {
+  position: relative;
+
+}
+
+
+#towel .t_list .item .imgbox .img1 {
+  position: relative;
+  top: 0;
+  z-index: 6;
+  opacity: 1;
+  transition: .3s;
+}
+#towel .t_list .item .imgbox .img2 {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  opacity: 0;
+  transition: .3s;
+}
+
+
+#towel .t_list .item .text {
+  position: relative;
+}
+
+#towel .t_list .item .text .title {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#towel .t_list .item .text .price1 {
+  color: #999;
+  text-decoration: line-through;
+}
+
+#towel .t_list .item .text .price2 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#towel .t_list .item .shop_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #8E1537;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  transition: .3s;
+  border-radius: 1rem;
+  gap: 0.5rem;
+
+}
+
+#towel .t_list .item .shop_btn:hover {
+  background-color: #8E1537;
+  color: #fff;
+}
+
+#towel .t_list .item .shop_btn:hover i{
+  color: #fff;
+}
+
+
+
+/* media */
+
+@media screen and (max-width:1800px) {
+  main {
+      padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  
+#towel .t_menu_btn {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+  #towel .t_list {
+    grid-template-columns: repeat(4,1fr);
+    gap: 5rem 1.5rem;
+  }
+
+  
+#towel .t_list .item .shop_btn {
+  margin-top: 2rem;
+}
+}
+
+@media screen and (max-width:991px) {
+  main {
+    padding: 0 1rem;
+  }
+
+  #towel .t_list {
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem 1.5rem;
+  }
+
+  #towel .t_list .item .text .title {
+    margin: 1rem 0;
+  }
+
+  #towel .t_list .item .text .price2 {
+    margin-top: 0.5rem;
+  }
+
+  #towel .t_list .item .shop_btn {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width:840px) {
+  #towel .t_menu_btn button{
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width:767px) {
+  #towel .t_list {
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width:430px) {
+
+  #towel .t_list {
+    grid-template-columns: repeat(1,1fr);
+    gap: 4rem 2rem;
+  }
+
+  #towel .t_list .item .text .title {
+    margin: 0.5rem 0;
+  }
+
+  #towel .t_list .item .text .price2 {
+    margin-top: 0;
+  }
+
+  #towel .t_list .item .shop_btn {
+    margin-top: 1rem;
+  }
+
+}
+
+
+
+
+

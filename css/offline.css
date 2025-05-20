@@ -1,0 +1,271 @@
+main {
+  width: 100%;
+  max-width: 1680px;
+  height: calc(100vh - 120px);
+  margin: auto;
+  margin-top: 120px;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+main h2 {
+  margin-bottom: 2rem;
+}
+
+#offline_wrap {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+#offline_wrap .map {
+  width: 50%;
+  height: 80vh;
+  position: relative;
+  transition: .3s;
+}
+
+#offline_wrap .map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+#offline_wrap .map .choice {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 99;
+  transition: .3s;
+
+}
+
+#offline_wrap .map .choice button {
+  display: block;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#offline_wrap .offlines {
+  width: 50%;
+  height: 80vh;
+  transition: .3s;
+}
+
+
+#offline_wrap .offlines .o_menu_btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 4px solid #8E1537;
+  padding-bottom: 2rem;
+}
+
+#offline_wrap .offlines .o_menu_btn button {
+  display: block;
+  padding: 0.5rem 2rem;
+  border: none;
+  color: #ccc;
+  border-radius: 0.5rem;
+  background: none;
+  font-size: 1rem;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#offline_wrap .offlines .offline_list {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+/* 스크롤바 전체 */
+::-webkit-scrollbar {
+  width: 12px;
+  /* 스크롤바 너비 */
+}
+
+/* 스크롤바 트랙 */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* 트랙 배경색 */
+  border-radius: 10px;
+  /* 트랙 모서리 둥글게 */
+}
+
+/* 스크롤바 핸들 */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* 핸들 색상 */
+  border-radius: 10px;
+  /* 핸들 모서리 둥글게 */
+  border: 3px solid #f1f1f1;
+  /* 핸들과 트랙 사이 간격 */
+}
+
+/* 스크롤바 핸들 호버 시 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* 핸들 호버 색상 */
+}
+
+#offline_wrap .offlines .offline_list .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed #efefef;
+  padding: 2rem 0.5rem;
+  position: relative;
+}
+
+#offline_wrap .offlines .offline_list .item .text {
+  width: 80%;
+}
+
+#offline_wrap .offlines .offline_list .item .text .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+#offline_wrap .offlines .offline_list .item .text .info {
+  width: 100%;
+}
+
+#offline_wrap .offlines .offline_list .item .text .info p {
+  margin-top: 0.5rem;
+}
+
+#offline_wrap .offlines .offline_list .item .text .info i {
+  font-size: 1rem;
+  color: #8E1537;
+  margin-right: 0.5rem;
+}
+
+#offline_wrap .offlines .offline_list .item .btns {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 500%;
+  position: relative;
+}
+
+#offline_wrap .offlines .offline_list .item .btns .open_btn {
+  width: 100%;
+  height: 100%;
+  background-color: #8E1537;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  z-index: 99;
+  display: block;
+  border-radius: 500%;
+  text-align: center;
+  align-content: center;
+  font-weight: 500;
+  opacity: 1;
+
+
+}
+
+#offline_wrap .offlines .offline_list .item .btns .close_btn {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  color: #efefef;
+  z-index: 98;
+  border-radius: 500%;
+  text-align: center;
+  align-content: center;
+  font-weight: 500;
+  opacity: 0;
+}
+
+
+@media screen and (max-width:1800px) {
+  main {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width:1600px) {
+  #offline_wrap .offlines .o_menu_btn button {
+    padding: 0.5rem 1.5rem;
+  }
+
+}
+
+@media screen and (max-width:1280px) {
+
+  #offline_wrap .offlines .o_menu_btn button {
+    padding: 0.5rem 1rem;
+  }
+
+  #offline_wrap .map {
+    width: 50%;
+  }
+
+  #offline_wrap .offlines {
+    width: 50%;
+  }
+
+
+
+}
+
+@media screen and (max-width:991px) {
+  main {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width:767px) {
+  #offline_wrap {
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+  }
+
+  #offline_wrap .map {
+    width: 100%;
+    height: 40vh;
+  }
+
+  #offline_wrap .offlines {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+
+  }
+
+  #offline_wrap .offlines .offline_list {
+    height: 30vh;
+  }
+
+
+  #offline_wrap .offlines .o_menu_btn {
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  #offline_wrap .offlines .offline_list .item {
+    padding: 1rem 0.5rem;
+
+  }
+
+}

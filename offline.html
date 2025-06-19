@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/offline.css">
+
+  <!-- script -->
+  <script src="https://kit.fontawesome.com/a668770e4c.js" crossorigin="anonymous"></script>
+  <script src="script/jquery-3.7.1.min.js"></script>
+  <script src="script/jquery-ui-1.10.3.custom.min.js"></script>
+  <script src="script/common.js" defer></script>
+  <Script src="script/offline.js" defer></Script>
+
+  <title>Offline</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="h_top">
+      <div class="h_topinner">
+
+        <div class="join">
+          <a href="#">
+            JOIN
+          </a>
+          <a href="#">
+            LOGIN
+          </a>
+        </div>
+
+        <select>
+          <option>lang</option>
+          <option>한국어</option>
+          <option>영어</option>
+        </select>
+
+      </div>
+
+    </div>
+
+    <div class="h_inner">
+
+
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="./img/header/logo.png" alt="logo">
+          <span class="t_hidden">송월타올</span>
+        </a>
+      </h1>
+
+      <ul class="menu">
+        <li>
+          <a href="#">
+            SHOP
+          </a>
+          <ul class="submenu">
+            <li>
+              <a href="shop.html">
+                타월
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                가운 & 시트 & 매트
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                목욕용품
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                GIFT SET
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                COLLABORATION
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="offline.html">
+            OFFLINE
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            COMMUNITY
+          </a>
+          <ul class="submenu">
+            <li>
+              <a href="#">
+                NOTICE
+              </a>
+            </li>
+            <li><a href="#">
+                FAQ
+              </a></li>
+            <li>
+              <a href="#">
+                1:1 문의
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">
+            SONGWOL NEWS
+          </a>
+          <ul class="submenu">
+            <li>
+              <a href="#">
+                NEWS
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                EVENT
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                SNS
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">
+            ABOUT US
+          </a>
+          <ul class="submenu">
+            <li>
+              <a href="#">
+                BRAND STORY
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                CI & BRAND
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                SONGWOL HISTORY
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <button type="button" class="menubar">
+        <img src="./img/header/menu.svg" alt="menu">
+      </button>
+    </div>
+
+
+  </header>
+  <!-- //header -->
+
+  <!-- hambar -->
+  <div class="hambar_menu">
+    <div class="ham_top">
+      <a href="#" class="ham_logo">
+        <img src="img/header/logo.png" alt="logo">
+      </a>
+      <div class="xbtn">
+        <img src="./img/header/xxx.svg" alt="xxx">
+      </div>
+    </div>
+    <ul class="ham_menu">
+      <li class="bigt">
+        <a href="#">
+          SHOP
+        </a>
+        <ul class="ham_sub">
+          <li>
+            <a href="shop.html">
+              타월
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              가운 & 시트 & 매트
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              목욕용품
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              GIFT SET
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              COLLABORATION
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="bigt">
+        <a href="offline.html">
+          OFFLINE
+        </a>
+      </li>
+
+      <li class="bigt">
+        <a href="#">
+          COMMUNITY
+        </a>
+        <ul class="ham_sub">
+          <li>
+            <a href="#">
+              NOTICE
+            </a>
+          </li>
+          <li><a href="#">
+              FAQ
+            </a></li>
+          <li>
+            <a href="#">
+              1:1 문의
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="bigt">
+        <a href="#">
+          SONGWOL NEWS
+        </a>
+        <ul class="ham_sub">
+          <li>
+            <a href="#">
+              NEWS
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              EVENT
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              SNS
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="bigt">
+        <a href="#">
+          ABOUT US
+        </a>
+        <ul class="ham_sub">
+          <li>
+            <a href="#">
+              BRAND STORY
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              CI & BRAND
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              SONGWOL HISTORY
+            </a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+  <!-- //hambar -->
+
+
+  <!-- main -->
+  <main>
+    <h2>매장 찾기</h2>
+    <div id="offline_wrap">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101196.38432804089!2d126.89076366708237!3d37.56950358103336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca370b8814751%3A0x725f88678fcd3200!2z7Iah7JuU7YOA7JuUIOyEnOyauOyDgeyCrA!5e0!3m2!1sko!2skr!4v1728627265476!5m2!1sko!2skr"
+          width="830" height="830" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="choice">
+          <button type="button">지도보기</button>
+          <button type="button">매장</button>
+        </div>
+      </div>
+      <div class="offlines">
+        <div class="o_menu_btn"></div>
+        <div class="offline_list">
+          <div class="item">
+            <div class="text">
+              <p class="title"></p>
+              <div class="info">
+                <span class="add"><i class="fa-solid fa-house"></i></span>
+                <p class="tel"><i class="fa-solid fa-phone"></i></p>
+              </div>
+            </div>
+            <div class="btns">
+              <div class="open_btn">OPEN</div>
+              <div class="close_btn">CLOSE</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+  <!-- //main -->
+
+
+  <!-- footer -->
+  <footer>
+    <div class="f_inner">
+
+      <div class="flogo">
+        <a href="#">
+          <img src="./img/header/logo.png" alt="flogo">
+        </a>
+      </div>
+
+      <div class="f_wrap">
+
+        <div class="left">
+          <div class="left_texttop">
+
+            <div class="left_text">
+              <span class="bold">주식회사</span>
+              <p>송월(주)</p>
+            </div>
+
+            <div class="left_text">
+              <span class="bold">대표</span>
+              <p>박병대</p>
+            </div>
+
+            <div class="left_text">
+              <span class="bold">사업자등록번호</span>
+              <p>880-81-00759</p>
+            </div>
+          </div>
+
+          <div class="left_text">
+            <span class="bold">주소</span>
+            <div class="address">
+
+              <p>
+                본사) 경상남도 양산시 유산공단 7길 45 </p>
+              <p>
+                서울) 서울특별시 영등포구 대방천로 12길 1
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="right">
+          <div class="icon">
+            <a href="#">
+              <img src="./img/footer/instagram.svg" alt="insta">
+            </a>
+            <a href="#">
+              <img src="./img/footer/blog.svg" alt="blog">
+            </a>
+            <a href="#">
+              <img src="./img/footer/youtube.svg" alt="youtube">
+            </a>
+          </div>
+
+          <select>
+            <option value="hidden">FAMILY SITE</option>
+            <option>(주)송월타올앤리빙</option>
+            <option>송월뉴스룸</option>
+            <option>송월타올 우리안</option>
+            <option>SONGWEL MALL</option>
+          </select>
+
+
+
+        </div>
+      </div>
+      <p class="copy">Copyright ⓒ 2024 SONGWOL Co, Ltd. All Rights Reserved - Since 1949</p>
+
+    </div>
+
+
+
+  </footer>
+  <!-- //footer -->
+
+  <!-- topbtn -->
+  <button type="button" class="topbtn">TOP</button>
+  <!-- //topbtn -->
+
+
+</body>
+
+</html>

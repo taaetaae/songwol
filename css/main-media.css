@@ -1,0 +1,399 @@
+/* 미디어쿼리 */
+
+@media screen and (max-width:1800px) {
+    #banner {
+
+        height: 80vh;
+        margin-bottom: 10rem;
+    }
+
+    #brand {
+        padding: 0 5rem;
+    }
+
+    #brand .brand .btext {
+        padding: 0 3rem;
+    }
+
+    #salebanner .saleslide .saletitle h3 {
+        font-size: 3.5rem;
+    }
+
+    
+
+}
+
+@media screen and (max-width:1400px) {
+
+    #brand .brand .btext p {
+        margin:3rem 0;
+        font-size: 1.1rem;
+    }
+
+    #salebanner .saleslide .saletitle h3 {
+        font-size: 3rem;
+    }
+
+  #news .newswrap .newsslide .newsbox {
+    margin-right: 2rem;
+}
+    
+}
+
+
+@media screen and (max-width:1280px) {
+
+    #banner {
+        height: 85vh;
+        margin-bottom: 10rem;
+    }
+
+    #brand {
+        padding: 0 2rem;
+    }
+
+    #brand .brand {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    #brand .brand picture {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    #brand .brand picture img {
+      margin: auto;
+    }
+
+    #brand .brand .btext {
+        width: 80%;
+        padding: 0;
+    }
+
+    #brand .brand .btext h3 {
+        font-size: 2.5rem;
+    
+    }
+    
+    #brand .brand .btext>span {
+        font-size: 1.5rem;
+    }
+
+    #brand .brand .btext a {
+        width: 50%;
+    }
+
+    #brand .brand:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    #brand .brands {
+      width: 80%;
+    }
+
+
+    #brand .brands .brandbox {
+        flex-wrap: wrap;
+    }
+
+    #brand .brands .brandbox figure {
+        width: calc( 100% / 3);
+    }
+    
+    #brand .brands .brandbox figure img {
+        margin: auto;
+
+    }
+
+    #best .bestslide_wrap .bestslide {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 4rem 0;
+    }
+
+    #salebanner {
+        margin-bottom: 15rem;
+    }
+
+
+    #salebanner .saleslide .saletitle h3 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    #salebanner .saleslide .saletitle p {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    #salebanner .saleslide .saletitle span {
+        font-size: 1.5rem;
+    }
+
+    #riving .rivingbox {
+        flex-direction: column;
+    }
+
+    #riving .rivingbox .riving1 {
+        width: 100%;
+    }
+
+    #riving .rivingbox .rivings {
+        width: 100%;
+    }
+
+    #riving .rivingbox .riving1 figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #giftset .gbox2 {
+        grid-template-columns: repeat(2,1fr);
+        gap: 0 1rem;
+    }
+
+    #news .newstitle {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #news .newstitle .ntitle {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #news .newswrap .newsslide .newsbox {
+      width: 100%;
+  }
+
+  #news .newswrap .newsbox .newstext p {
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    --webkit-line-clamp: 2;
+  }
+
+}
+
+@media screen and (max-width:991px) {
+
+  #brand .brands {
+    width: 100%;
+  } 
+  
+}
+
+
+
+@media screen and (max-width:767px) {
+
+
+  #banner,#best, #riving, #giftset, #news {
+    margin-bottom: 8rem;
+  }
+
+    #brand .brand picture {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    #brand .brand .btext {
+        width: 100%;
+        padding:0;
+    }
+
+    #banner {
+        height: 65vh;
+        margin-bottom: 20rem;
+    
+    }
+
+    #banner .bslide .bbox span {
+        width: 100%;
+        padding: 4px 8px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    
+    #brand .brands .brandbox figure {
+        width: 50%;
+    }
+
+    #best .bestslide_wrap .bestslide {
+        flex-wrap: wrap;
+        overflow: hidden;
+        gap: 4rem 1rem;
+    }
+    #best .bestslide_wrap .bestslide .bestbox {
+        width: 45%;
+        height: fit-content;
+    }
+
+    #best {
+      margin-bottom: 10rem;
+  }
+
+  #salebanner .saleslide .saletitle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  #salebanner .saleslide .saletitle p {
+    margin-bottom: 2rem;
+  }
+
+  #salebanner .sbanner .label {
+    padding: 0rem 1rem;
+}
+
+
+    #giftset {
+      margin-bottom: 10rem;
+  }
+
+    #giftset .gboxs {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #giftset .gboxs .gbox {
+      width: 100%;
+    }
+
+    #giftset .gboxs .textbox {
+        width: 100%;
+        margin: auto;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    #giftset .gboxs .textbox .colorbox {
+       justify-content: center;
+    }
+
+    #news .newstitle .ntitle p {
+      font-size: 1.5rem;
+      line-height: 150%;
+  }
+
+  #news .newstitle .newsbtn {
+    font-size: 1.1rem;
+  }
+
+  
+  #news .newstitle .newsbtn img {
+    width: 2rem;
+  }
+
+    #news .newswrap .newsbox .newstext p {
+        font-size: 1.1rem
+    }
+
+    #news .newswrap .newsslide .newsbox {
+
+      margin-right: 0;
+  }
+
+  
+    
+}
+
+@media screen and (max-width:575px) {
+  #salebanner .saleslide .saletitle h3 {
+    font-size: 2.5rem;
+}
+
+#salebanner .saleslide .saletitle p {
+    font-size: 1.5rem;
+}
+
+#salebanner .saleslide .saletitle span {
+    font-size: 1.5rem;
+
+}
+
+
+#giftset .gbox2 {
+    grid-template-columns: repeat(1,1fr);
+    gap: 0 1rem;
+}
+}
+
+@media screen and (max-width:430px) {
+    #news .newswrap .newsslide .newsbox {
+        flex-direction: column;
+    }
+
+    #news .newswrap .newsslide .newsbox figure {
+        width: 100%;
+      }
+    
+      #news .newswrap .newsslide .newsbox .newstext {
+        width: 100%;
+        margin-top: 0;
+        padding-left: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+
+    #banner {
+        height: 50vh;
+    }
+
+
+    #banner .bslide .bbox span {
+
+        font-size: 1.3rem;
+    }
+
+    #brand .brand picture img{
+        width: 100%;
+        padding: 0;
+    }
+
+    #brand .brand .btext {
+        width: 100%;
+        padding: 0;
+    }
+
+    #salebanner .saleslide .saletitle h3 {
+      font-size: 2rem;
+  }
+  
+  #salebanner .saleslide .saletitle p {
+      font-size: 1.2rem;
+  }
+  
+  #salebanner .saleslide .saletitle span {
+      font-size: 1.2rem;
+  
+  }
+
+    #salebanner .sbanner .label {
+        font-size: 1rem;
+    }
+    #riving .rivingbox .riving1 {
+       width: 100%;
+    }
+
+
+    #riving .rivingbox .rivings .riving2{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #riving .rivingbox .rivings .riving2 figure {
+        width: 100%;
+        transition: 1s;
+    }
+
+
+}
